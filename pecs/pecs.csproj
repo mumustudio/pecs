@@ -1,0 +1,1054 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.3.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{580E0705-E886-4F21-A4B5-C75092106D51}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>pecs</RootNamespace>
+    <AssemblyName>pecs</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.3.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.3.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.113.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.113.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.113.0\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.113.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.113.0\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="db\pecsDB.cs" />
+    <Compile Include="db\Student.cs" />
+    <Compile Include="db\UserInfo.cs" />
+    <Compile Include="frm10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm10.Designer.cs">
+      <DependentUpon>frm10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm11.Designer.cs">
+      <DependentUpon>frm11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm12.Designer.cs">
+      <DependentUpon>frm12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm13.Designer.cs">
+      <DependentUpon>frm13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm14.Designer.cs">
+      <DependentUpon>frm14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm15.Designer.cs">
+      <DependentUpon>frm15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm16.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm16.Designer.cs">
+      <DependentUpon>frm16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm17.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm17.Designer.cs">
+      <DependentUpon>frm17.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm18.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm18.Designer.cs">
+      <DependentUpon>frm18.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm19.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm19.Designer.cs">
+      <DependentUpon>frm19.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm2.Designer.cs">
+      <DependentUpon>frm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm20.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm20.Designer.cs">
+      <DependentUpon>frm20.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm21.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm21.Designer.cs">
+      <DependentUpon>frm21.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm22.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm22.Designer.cs">
+      <DependentUpon>frm22.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm23.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm23.Designer.cs">
+      <DependentUpon>frm23.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm24.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm24.Designer.cs">
+      <DependentUpon>frm24.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm25.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm25.Designer.cs">
+      <DependentUpon>frm25.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm26.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm26.Designer.cs">
+      <DependentUpon>frm26.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm27.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm27.Designer.cs">
+      <DependentUpon>frm27.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm28.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm28.Designer.cs">
+      <DependentUpon>frm28.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm29.Designer.cs">
+      <DependentUpon>frm29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm30.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm30.Designer.cs">
+      <DependentUpon>frm30.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm31.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm31.Designer.cs">
+      <DependentUpon>frm31.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm32.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm32.Designer.cs">
+      <DependentUpon>frm32.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm33.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm33.Designer.cs">
+      <DependentUpon>frm33.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm34.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm34.Designer.cs">
+      <DependentUpon>frm34.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm35.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm35.Designer.cs">
+      <DependentUpon>frm35.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm36.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm36.Designer.cs">
+      <DependentUpon>frm36.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm37.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm37.Designer.cs">
+      <DependentUpon>frm37.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm38.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm38.Designer.cs">
+      <DependentUpon>frm38.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm39.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm39.Designer.cs">
+      <DependentUpon>frm39.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm40.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm40.Designer.cs">
+      <DependentUpon>frm40.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm41.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm41.Designer.cs">
+      <DependentUpon>frm41.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm42.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm42.Designer.cs">
+      <DependentUpon>frm42.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm43.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm43.Designer.cs">
+      <DependentUpon>frm43.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm44.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm44.Designer.cs">
+      <DependentUpon>frm44.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm45.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm45.Designer.cs">
+      <DependentUpon>frm45.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm46.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm46.Designer.cs">
+      <DependentUpon>frm46.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm47.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm47.Designer.cs">
+      <DependentUpon>frm47.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm48.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm48.Designer.cs">
+      <DependentUpon>frm48.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm49.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm49.Designer.cs">
+      <DependentUpon>frm49.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm50.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm50.Designer.cs">
+      <DependentUpon>frm50.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm51.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm51.Designer.cs">
+      <DependentUpon>frm51.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm52.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm52.Designer.cs">
+      <DependentUpon>frm52.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm53.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm53.Designer.cs">
+      <DependentUpon>frm53.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm54.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm54.Designer.cs">
+      <DependentUpon>frm54.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm55.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm55.Designer.cs">
+      <DependentUpon>frm55.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm56.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm56.Designer.cs">
+      <DependentUpon>frm56.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm57.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm57.Designer.cs">
+      <DependentUpon>frm57.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm58.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm58.Designer.cs">
+      <DependentUpon>frm58.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm59.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm59.Designer.cs">
+      <DependentUpon>frm59.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm60.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm60.Designer.cs">
+      <DependentUpon>frm60.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm61.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm61.Designer.cs">
+      <DependentUpon>frm61.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm62.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm62.Designer.cs">
+      <DependentUpon>frm62.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm63.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm63.Designer.cs">
+      <DependentUpon>frm63.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm64.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm64.Designer.cs">
+      <DependentUpon>frm64.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm65.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm65.Designer.cs">
+      <DependentUpon>frm65.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm66.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm66.Designer.cs">
+      <DependentUpon>frm66.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm67.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm67.Designer.cs">
+      <DependentUpon>frm67.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm68.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm68.Designer.cs">
+      <DependentUpon>frm68.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm69.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm69.Designer.cs">
+      <DependentUpon>frm69.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm70.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm70.Designer.cs">
+      <DependentUpon>frm70.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm71.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm71.Designer.cs">
+      <DependentUpon>frm71.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm72.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm72.Designer.cs">
+      <DependentUpon>frm72.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm73.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm73.Designer.cs">
+      <DependentUpon>frm73.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm74.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm74.Designer.cs">
+      <DependentUpon>frm74.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm75.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm75.Designer.cs">
+      <DependentUpon>frm75.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm76.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm76.Designer.cs">
+      <DependentUpon>frm76.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm77.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm77.Designer.cs">
+      <DependentUpon>frm77.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickImage.Designer.cs">
+      <DependentUpon>frmPickImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm78.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm78.Designer.cs">
+      <DependentUpon>frm78.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm79.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm79.Designer.cs">
+      <DependentUpon>frm79.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm80.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm80.Designer.cs">
+      <DependentUpon>frm80.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm81.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm81.Designer.cs">
+      <DependentUpon>frm81.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm82.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm82.Designer.cs">
+      <DependentUpon>frm82.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm83.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm83.Designer.cs">
+      <DependentUpon>frm83.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm84.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm84.Designer.cs">
+      <DependentUpon>frm84.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm85.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm85.Designer.cs">
+      <DependentUpon>frm85.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm86.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm86.Designer.cs">
+      <DependentUpon>frm86.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm87.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm87.Designer.cs">
+      <DependentUpon>frm87.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm88.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm88.Designer.cs">
+      <DependentUpon>frm88.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm89.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm89.Designer.cs">
+      <DependentUpon>frm89.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm90.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm90.Designer.cs">
+      <DependentUpon>frm90.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm91.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm91.Designer.cs">
+      <DependentUpon>frm91.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm3.Designer.cs">
+      <DependentUpon>frm3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm4.Designer.cs">
+      <DependentUpon>frm4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm1.Designer.cs">
+      <DependentUpon>frm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm5.Designer.cs">
+      <DependentUpon>frm5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm6.Designer.cs">
+      <DependentUpon>frm6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm7.Designer.cs">
+      <DependentUpon>frm7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8.Designer.cs">
+      <DependentUpon>frm8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm9.Designer.cs">
+      <DependentUpon>frm9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PECSDB.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="state\Goal.cs" />
+    <Compile Include="state\ImageInst.cs" />
+    <Compile Include="state\Topic.cs" />
+    <EmbeddedResource Include="frm10.resx">
+      <DependentUpon>frm10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm11.resx">
+      <DependentUpon>frm11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm12.resx">
+      <DependentUpon>frm12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm13.resx">
+      <DependentUpon>frm13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm14.resx">
+      <DependentUpon>frm14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm15.resx">
+      <DependentUpon>frm15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm16.resx">
+      <DependentUpon>frm16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm17.resx">
+      <DependentUpon>frm17.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm18.resx">
+      <DependentUpon>frm18.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm19.resx">
+      <DependentUpon>frm19.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm2.resx">
+      <DependentUpon>frm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm20.resx">
+      <DependentUpon>frm20.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm21.resx">
+      <DependentUpon>frm21.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm22.resx">
+      <DependentUpon>frm22.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm23.resx">
+      <DependentUpon>frm23.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm24.resx">
+      <DependentUpon>frm24.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm25.resx">
+      <DependentUpon>frm25.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm26.resx">
+      <DependentUpon>frm26.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm27.resx">
+      <DependentUpon>frm27.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm28.resx">
+      <DependentUpon>frm28.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm29.resx">
+      <DependentUpon>frm29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm3.resx">
+      <DependentUpon>frm3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm30.resx">
+      <DependentUpon>frm30.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm31.resx">
+      <DependentUpon>frm31.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm32.resx">
+      <DependentUpon>frm32.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm33.resx">
+      <DependentUpon>frm33.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm34.resx">
+      <DependentUpon>frm34.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm35.resx">
+      <DependentUpon>frm35.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm36.resx">
+      <DependentUpon>frm36.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm37.resx">
+      <DependentUpon>frm37.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm38.resx">
+      <DependentUpon>frm38.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm39.resx">
+      <DependentUpon>frm39.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm4.resx">
+      <DependentUpon>frm4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm1.resx">
+      <DependentUpon>frm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm40.resx">
+      <DependentUpon>frm40.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm41.resx">
+      <DependentUpon>frm41.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm42.resx">
+      <DependentUpon>frm42.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm43.resx">
+      <DependentUpon>frm43.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm44.resx">
+      <DependentUpon>frm44.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm45.resx">
+      <DependentUpon>frm45.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm46.resx">
+      <DependentUpon>frm46.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm47.resx">
+      <DependentUpon>frm47.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm48.resx">
+      <DependentUpon>frm48.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm49.resx">
+      <DependentUpon>frm49.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm5.resx">
+      <DependentUpon>frm5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm50.resx">
+      <DependentUpon>frm50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm51.resx">
+      <DependentUpon>frm51.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm52.resx">
+      <DependentUpon>frm52.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm53.resx">
+      <DependentUpon>frm53.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm54.resx">
+      <DependentUpon>frm54.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm55.resx">
+      <DependentUpon>frm55.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm56.resx">
+      <DependentUpon>frm56.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm57.resx">
+      <DependentUpon>frm57.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm58.resx">
+      <DependentUpon>frm58.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm59.resx">
+      <DependentUpon>frm59.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm6.resx">
+      <DependentUpon>frm6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm60.resx">
+      <DependentUpon>frm60.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm61.resx">
+      <DependentUpon>frm61.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm62.resx">
+      <DependentUpon>frm62.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm63.resx">
+      <DependentUpon>frm63.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm64.resx">
+      <DependentUpon>frm64.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm65.resx">
+      <DependentUpon>frm65.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm66.resx">
+      <DependentUpon>frm66.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm67.resx">
+      <DependentUpon>frm67.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm68.resx">
+      <DependentUpon>frm68.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm69.resx">
+      <DependentUpon>frm69.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm7.resx">
+      <DependentUpon>frm7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm70.resx">
+      <DependentUpon>frm70.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm71.resx">
+      <DependentUpon>frm71.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm72.resx">
+      <DependentUpon>frm72.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm73.resx">
+      <DependentUpon>frm73.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm74.resx">
+      <DependentUpon>frm74.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm75.resx">
+      <DependentUpon>frm75.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm76.resx">
+      <DependentUpon>frm76.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm77.resx">
+      <DependentUpon>frm77.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickImage.resx">
+      <DependentUpon>frmPickImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm78.resx">
+      <DependentUpon>frm78.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm79.resx">
+      <DependentUpon>frm79.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8.resx">
+      <DependentUpon>frm8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm80.resx">
+      <DependentUpon>frm80.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm81.resx">
+      <DependentUpon>frm81.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm82.resx">
+      <DependentUpon>frm82.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm83.resx">
+      <DependentUpon>frm83.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm84.resx">
+      <DependentUpon>frm84.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm85.resx">
+      <DependentUpon>frm85.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm86.resx">
+      <DependentUpon>frm86.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm87.resx">
+      <DependentUpon>frm87.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm88.resx">
+      <DependentUpon>frm88.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm89.resx">
+      <DependentUpon>frm89.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm9.resx">
+      <DependentUpon>frm9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm90.resx">
+      <DependentUpon>frm90.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm91.resx">
+      <DependentUpon>frm91.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\A\哈密瓜.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\A\奇異果.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\A\木瓜.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\A\李子.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\A\果汁.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\A\柿子.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\A\楊桃.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\A\橄欖.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\A\橘子.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\A\檸檬.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\A\水果.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\A\水梨.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\A\水蜜桃.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\A\番石柳.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\A\番茄.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\A\石柳.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\A\芒果.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\A\草莓.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\A\荔枝.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\A\葡萄.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\A\葡萄柚.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\A\蓮霧.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\A\蘋果.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\A\西瓜.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\A\青椒.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\A\香蕉.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\A\鳳梨.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\A\龍眼.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\B\banna.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\B\car.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\B\house.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\B\orange.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\B\train.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\C\correct2.png" />
+    <Content Include="data\C\correct1.png" />
+    <Content Include="Resources\back.png" />
+    <None Include="Resources\wrong.png" />
+    <None Include="Resources\ok.png" />
+    <None Include="Resources\imgQuestion.bmp" />
+    <None Include="Resources\imgExit.bmp" />
+    <None Include="pic\option_free.png" />
+    <None Include="pic\option_click.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此專案參考這部電腦上所缺少的 NuGet 套件。請啟用 NuGet 套件還原，以下載該套件。如需詳細資訊，請參閱 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的檔案是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.3.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.3.0\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.3.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.targets')" />
+  <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+</Project>
